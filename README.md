@@ -1,2 +1,1 @@
-# Henrik.Nilsson
-Curriculum Vitae
+School assignments for Dom Manipulation.
