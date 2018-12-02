@@ -2,7 +2,9 @@
 ﻿<html lang="en" dir="ltr">
 ﻿  <head>
 ﻿    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
 ﻿    <title></title>
 ﻿  </head>
 ﻿  <body>
@@ -18,14 +20,33 @@
 
     </div>
     <div class="body">
+      <div class="contentDiv0.1">
 
+            <h3 id="tryoutH3">
+              Här testar jag lite olika selektorer och pröver dom olika teknikerna
+              i DOM manipulation.
+            </h3>
+            <div class="contentSwitch">
+              <p id="tryoutP">Detta är en paragraf</p>
+              <div id="tryoutDiv">Detta är en div</div>
+
+              <ul id="tryoutUl">
+                <button type="button" id="tryoutButton">Click Me!</button>
+                <li id="tryoutLi" class="listGrp">Detta är en list 1</li>
+                <li id="tryoutLi" class="listGrp">Detta är en list 2</li>
+                <li id="tryoutLi" class="listGrp">Detta är en list 3</li>
+                <li id="tryoutLi" class="listGrp">Detta är en list 3</li>
+              </ul>
+            </div>
+
+      </div>
       <div class="contentDiv1">
 
             <h3>
               1. Skapa en sida med en div. Ge div-elementet ett id. När sidan
               laddas ska du byta textinnehållet till något annat med hjälp av
               JavaScript och egenskapen innerHTML.
-              <div class="contentSwitch">
+              <div class="contentSwitch" id="ass1">
                 <p>Detta är diven som skall byta text till ngt roligare</p>
               </div>
             </h3>
@@ -104,29 +125,22 @@ Utöka funktionen så att den lägger till ett utropstecken sist på varje li-el
           </div>
         </h3>
       </div>
-      <h3>
-        1. Skapa en sida med en div. Ge div-elementet ett id. När sidan
-        laddas ska du byta textinnehållet till något annat med hjälp av
-        JavaScript och egenskapen innerHTML.
-        <div class="contentSwitch">
-          <p>Detta är diven som skall byta text till ngt roligare</p>
-        </div>
-      </h3>
-      </div>
-      <div class="contentDiv10">
+      <div class="contentDiv8">
         <h3>
-          1. Skapa en sida med en div. Ge div-elementet ett id. När sidan
-          laddas ska du byta textinnehållet till något annat med hjälp av
-          JavaScript och egenskapen innerHTML.
+          8 Skapa en sida med ett button-element och två listor med flera element i den första. När man klickar på knappen ska det första li-elementet i den första listan flyttas till den andra listan. Tips: skapa en funktion som returnerar det första li-elementet i en html-lista.
+
           <div class="contentSwitch">
             <p>Detta är diven som skall byta text till ngt roligare</p>
           </div>
         </h3>
-    </div>
+      </div>
+      </div>
+
     <div class="footer">
       <h1>This is some type of header for the footer.</h1>
     </div>
 ﻿
 ﻿   </div>
+      <script src="dom.js"></script>
 ﻿  </body>
 ﻿</html>
