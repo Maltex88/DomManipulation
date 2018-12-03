@@ -31,7 +31,46 @@ console.log(li);
 for(i = 0; i < li.length; i++) {
   li[i].style.backgroundColor = 'yellow';
 }*/
-var hej = document.getElementById('ass1');
-console.log(hej);
-hej.innerHTML = 'Detta är den nya diven';
-;
+
+
+/*Assignment1*/
+/*
+var hej1 = document.getElementById('ass1');
+hej1.innerHTML = 'Detta är den nya diven';
+*/
+/*Assignment2*/
+/*
+let addLiButton = document.querySelector('.btn2'); -Hittar båda elementen i DOM
+let ulList = document.querySelector('.ul2');
+
+addLiButton.addEventListener('click', event => {
+  let newElement = document.createElement('li');
+  newElement.innerHTML = 'List item';
+  ulList.appendChild(newElement);
+})
+*/
+/*assignment 3 */
+/*
+let changedivButton = document.querySelector('#btn3');
+let divToSwitch = document.getElementsByClassName('divClass3');
+let onOff = true;
+let oldValues=[]
+changedivButton.addEventListener('click', event => {
+  if (onOff == true) {
+    for(i = 0; i < divToSwitch.length; i++) {
+      oldValues[i] = divToSwitch[i].innerHTML;
+      divToSwitch[i].innerHTML = 'Hej';
+
+    }   onOff = false;
+    console.log(onOff);
+  } else {
+    for(i = 0; i < divToSwitch.length; i++) {
+      divToSwitch[i].innerHTML = oldValues[i];
+
+    }
+    onOff = true;
+    console.log(onOff);
+  }
+
+});
+*/
