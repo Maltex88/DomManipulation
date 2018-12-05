@@ -34,6 +34,8 @@ for(i = 0; i < li.length; i++) {
 
 
 /*Assignment1*/
+
+
 /*
 var hej1 = document.getElementById('ass1');
 hej1.innerHTML = 'Detta är den nya diven';
@@ -50,6 +52,8 @@ addLiButton.addEventListener('click', event => {
 })
 */
 /*assignment 3 */
+
+
 /*
 let changedivButton = document.querySelector('#btn3');
 let divToSwitch = document.getElementsByClassName('divClass3');
@@ -60,16 +64,33 @@ changedivButton.addEventListener('click', event => {
     for(i = 0; i < divToSwitch.length; i++) {
       oldValues[i] = divToSwitch[i].innerHTML;
       divToSwitch[i].innerHTML = 'Hej';
-
     }   onOff = false;
-    console.log(onOff);
   } else {
     for(i = 0; i < divToSwitch.length; i++) {
       divToSwitch[i].innerHTML = oldValues[i];
-
     }
     onOff = true;
-    console.log(onOff);
+  }
+
+});
+*/
+
+
+/*Assignments 4a + b*/
+/*
+let classSwitch = document.getElementById("classChangerbuttonId");
+let oldy = document.getElementById("classChangerbuttonId").className;
+console.log(oldy);
+let onOff = true;
+
+
+classSwitch.addEventListener('click', event => {
+  if(onOff == true) {
+    let newValue = document.getElementById("classChangerbuttonId").className = "newButtonValue";
+    onOff = false;
+  }  else {
+    onOff = true;
+    newValue = document.getElementById("classChangerbuttonId").className = oldy;
   }
 
 });
